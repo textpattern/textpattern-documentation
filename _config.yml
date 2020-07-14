@@ -2,12 +2,22 @@ url: https://docs.textpattern.com
 timezone: Europe/London
 permalink: /:categories/:title
 plugins:
+#  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 author: The Textpattern Development Team and contributors
 exclude:
+#  - .sass-cache/
+#  - .jekyll-cache/
+#  - gemfiles/
   - Gemfile
+#  - Gemfile.lock
   - LICENSE.txt
+#  - node_modules/
   - README.md
+#  - vendor/bundle/
+#  - vendor/cache/
+#  - vendor/gems/
+#  - vendor/ruby/
 kramdown:
   toc_levels: 2..4
