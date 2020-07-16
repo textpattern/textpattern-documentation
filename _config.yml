@@ -8,8 +8,11 @@ plugins:
 author: The Textpattern Development Team and contributors
 exclude:
   - Gemfile
+  - Gruntfile.js
   - LICENSE.txt
+  - package.json
   - README.md
+  - src
 kramdown:
   toc_levels: 2..4
 highlighter: none
