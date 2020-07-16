@@ -14,7 +14,7 @@ module.exports = function (grunt)
                 files: [
                     {
                         'assets/js/search.js': [
-                            'node_modules/jquery/dist/jquery.slim.js',
+                            'node_modules/jquery/dist/jquery.js',
                             'node_modules/lunr/lunr.js',
                             'src/search.js'
                         ]
