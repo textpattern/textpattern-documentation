@@ -16,3 +16,6 @@ exclude:
 kramdown:
   toc_levels: 2..4
 highlighter: none
+keep_files: [
+  'expect-ct-report'
+]
