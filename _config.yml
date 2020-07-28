@@ -11,6 +11,7 @@ exclude:
   - Gruntfile.js
   - LICENSE.txt
   - package.json
+  - package-lock.json
   - README.md
   - src
 kramdown:
