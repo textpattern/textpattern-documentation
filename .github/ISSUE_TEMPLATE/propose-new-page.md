@@ -1,23 +1,24 @@
 ---
-name: Propose new page
-about: Suggest a new page to be added to the docs
+name: New page
+about: Use this template to start a new dedicated issue for a new docs page
 title: 'proposed: '
 labels: ''
 assignees: ''
 
 ---
 
-{add full/absolute url here based on proposed title}
+#### URLs
 
-## Explanation for proposal
+- Back: {repo URL here (.md file)}
+- Front: {website URL here}
+
+#### Explanation of new page
 
 {Propose/explain here}
 
-## Resources to consider for draft
-Add information text and link
+#### Checkbox list of resources to support draft
 
-- [ ] link
-- [ ] link
-- [ ] link
-- [ ] link
-etc
+- [ ] {url here} ({brief description of resource here})
+- [ ] {url here} ({brief description of resource here})
+- [ ] {url here} ({brief description of resource here})
+(copy/repeat as needed)
