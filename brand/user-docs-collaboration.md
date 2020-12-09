@@ -10,7 +10,7 @@ description: Orientation for collaboration on Textpattern user documentation.
 
 These procedures are for anyone helping to develop user documentation for Textpattern. They cover the full extent of the collaboration process in relation to documentation workflow, including the protocols for using the repository Issues. People actually writing and editing user documentation will also be aware of the [guidelines for developing user documentation](/brand/user-docs-guide).
 
-**On this page**:
+**Contents**:
 
 * Contents
 {:toc}
@@ -39,7 +39,7 @@ Likewise, redundantly explaining the same things over and over in the Forum when
 
 You should only write documentation for which there are existing open [Issues defining documentation objectives](https://docs.textpattern.com/brand/user-docs-collaboration#documentation-repository-protocols). 
 
-However, before editors can know what Issues to create, there must be a prior assessment of what topics are needed, as reflected by scenario steps 4 and 5 in the previous section.  
+However, before editors can know what Issues to create, a prior assessment of what topics are needed must be conducted, as reflected by scenario steps 4 and 5 in the previous section.  
 
 ### Identifying potential topics
 
@@ -62,7 +62,7 @@ But anyone can provide initial discussion to the decisions and actions needing m
 * Seeing what kinds of topics are shared, which might, in turn, help with recognizing related topic ideas
 * Evaluating suggestions against what may already exist in docs but not easily found/seen (thus a spotted IA problem to fix)
 * Early discussion of listed topics by editors to evaluate architecture changes in relation
-* Prioritizing topics for development, and therefor how exactly to start a dedicated repo Issue for the document task and data gathering.
+* Prioritizing topics for development, and therefore how exactly to start a dedicated repo Issue for the document task and data gathering
 
 Editors will need to evaluate how best to work the topics into the organization of the file tree. Sometimes, if not often, this will mean working the help information into an existing document instead of creating a new one. It just depends on what topics surface and what information already exists.
 
@@ -84,7 +84,7 @@ The third is not really a title, but a file name based on the  document’s titl
 
 The grammar rules and syntax tricks for titles and associated file-names are not exactly the same. Document titles must be grammatically correct, while file-name titles can be written however is needed, so long as they still suggest what document they concern.
 
-Normally metadata titles and `h1` titles can be tailored to bots and humans, respectively, meaning the former can be a little more key-word loaded while the latter can be more concise for the sake of brevity and website usability. This is not recommended in Textpattern user docs, however, because the breadcrumb trails that appear at tops of documents pull the metadata titles instead of what would otherwise be more concise `h1` titles. Thus, in this website, the metadata and `h1` titles must be the same to prevent an ugly discord between breadcrumbs and `h1` titles.
+Normally, metadata titles and `h1` titles can be tailored to bots and humans, respectively, meaning the former can be more key-word loaded while the latter is more concise for the sake of brevity and website usability. This separate tailoring is not recommended in Textpattern user docs, however, because the terminal end of the breadcrumb trails that appear at top of doc pages pulls from the metadata title instead of the `h1` title. If the two title locations are tailored differently, it results in a wordier breadcrumb string much out of sync with the `h1` title directly underneath it. Thus, in this website, the metadata and `h1` titles must be exactly the same to prevent an ugly discord between breadcrumbs and `h1` titles.
 
 We thus refer to metadata titles and `h1` titles collectively as *topic titles*. 
 
@@ -104,55 +104,60 @@ Fortunately, topic titles can be changed anytime to improve the clarity and usab
 
 ### URL-only titles
 
-Unlike topic titles, URL-only titles (i.e. document file names based off of topic titles) do not have to follow the same rules of grammar or satisfy search engines. This means you can drop as many words as you can and mix the remaining words around so long as what is left still hints to the document topic it belongs to. The resulting shorter file names make it a *lot* easier to work with links in copy and file tree directories.
+Unlike topic titles, URL-only titles (document file names based off of topic titles) do not have to follow the same rules of grammar or satisfy search engines. This means you can drop as many words as you can and mix the remaining words around so long as what is left still hints to the document topic it belongs to. The resulting shorter file names make it a *lot* easier to work with links in copy and file tree directories.
 
 Use your best judgement for document file names, thus their URLs, but consider the following guides to help:
 
-* Cut every word that is not directly focused on the topic or scope of material (e.g. never use ‘textpattern’, ‘tutorial’, etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on).
-* Use fewer verbs and nouns if one or two will suffice to still make it clear what document is concerned.
+* Cut words that are not directly focused on the topic or scope of material (e.g. never use ‘textpattern’, ‘tutorial’, etc., for reasons explained earlier, nor any needless parts of speech like articles, conjunctions, prepositions, and so on)
+* Use fewer verbs and nouns if one or two will suffice to still make it clear what document is concerned
 * Use abbreviations if they are commonly used in the domain (e.g. the current doc uses ‘docs’ instead of ‘documentation’)
 * Front-load subject terms when feasible (i.e. put these terms at the start of the file name)
 * Use front-loading and shortening patterns strategically to group related files together alphabetically in shared directories
 
-You could look at the file names of many existing docs in the file tree and find poorly conceived examples. This very document, for instance, could have been named ‘docs-collaboration’, dropping *user*, or ‘collaboration-procedures’. But it’s never to late to do better.
+You could look at the file names of many existing docs in the file tree and find poorly conceived examples; either too long, having poor syntactic structure, or both. This very document, for instance, could have been named ‘docs-collaboration’, dropping *user*. But it’s never to late to do better with new documentation.
 
-While we generally don’t want to mess with sleeping dogs, sometimes it is necessary to improve information architecture and change a few file names, especially if they were created with no thought to being lean. We only do this, however, if 301 redirects can be established for the changed URLs at the same time; otherwise, we risk breaking a lot of links to the document from within the documentation site, across the forum, and elsewhere. 
+While we generally don’t want to mess with existing file names already indexed (and likely linked to from other documentation pages, form Forum threads, and elsewhere), sometimes it is necessary to improve information architecture, especially if file are particularly long or not clearly indicative of their document’s topic. We only do this, however, if 301 redirects can be established for the changed URLs at the same time; otherwise, we risk breaking a lot of links to the document. 
 
-Make URL redirect requests in the associated doc Issue (described next) and address the change request to @petecooper, Textpattern’s systems administrator. Do not push the file name changes live until Pete has a chance to coordinate the redirects relatively close to the same time.
+Make URL redirect requests for documents by using their dedicated repository issues (or create one if necessary) address redirect requests to @petecooper, Textpattern’s systems administrator. Do not push the file name changes live until Pete has a chance to coordinate the redirects at a relatively close point in time.
 
 ## Repository protocols
 
-Editors will be responsible for creating and editing Issues based on any provided discussion from other collaborators.
+Collaboration on documentation largely centres around using Issues in the website’s file-tree repository. The repository keeps the files under version control while dedicated documentation Issues provide a means for coordinating tasks among collaborators so they don’t step on each others’ toes. 
 
 ### Issues
 
 [Issues](https://github.com/textpattern/textpattern.github.io/issues) are a feature of most versioning repositories, though we use them differently for documentation development than how they are typically used for software code.
 
-In our case, every page in the documentation tree has its own dedicated Issue (or will, eventually, as we progress), a 1:1 relationship. That means when an issue is addressed and closed for any given task, it is not closed permanently. Should the page ever need revisions in the future, the dedicated issue will be reopened and updated to reflect what new changes are needed and who is assigned for the task.
+In our case, every page in the documentation tree has its own dedicated Issue (or will, eventually, as we progress), a 1:1 relationship. That means when an issue is addressed and closed for any given task, it is not closed permanently. Should the page ever need revisions in the future, the dedicated issue will be reopened and updated to reflect what new changes are needed and who is assigned to do them.
 
-### Creating new issues
+### Creating issues
 
-When creating new Issues, one is faced with three [template options](https://github.com/textpattern/textpattern.github.io/issues/new/choose) to choose from. Only two are relevant to documentation collaboration and described here (ignore the third).
+For purposes here, issues are created for one of two reasons only:
+
+* An existing doc page needs a revision and no dedicated issue exists for it yet to detail the problem.
+* A new doc page is needed.
+
+When creating new Issues, one is faced with three [template options](https://github.com/textpattern/textpattern.github.io/issues/new/choose) to choose from. Two are relevant to the above, and one (regarding author prefixes) should be ignored.
+
+Before setting out to use an issue template, do a search in both [open issues](https://github.com/textpattern/textpattern.github.io/issues) and [closed issues](https://github.com/textpattern/textpattern.github.io/issues?q=is%3Aissue+is%3Aclosed) for either the page you are interested in, by its title (in the case of existing pages), or any open issue that might exist having similar subject terms (in the case of new pages). In the latter case, it’s not impossible, though unlikely under these collaboration procedures, that someone else started an issue on a similar topic but by a different title; you should see what might surface just in case and proceed to communicate with them about the best way forward.
+
+#### Issue template generalities
 
 Each template provides some pre-filled data and instructions to help get it started.
 
-Title fields of each template will be pre-filled with title prefixes. Leave the prefixes in place and add titles after them.
+Title fields of each template will be pre-filled with title prefixes. Leave the prefixes in place and add doc titles after them.
 
-Body fields of each template (effectively the head post of the issue once created) will provide various cues for what type of information should be added to the issue. In both cases, the body field should begin with the full URLs for the expected backend and front-end document locations, for example:
+The body fields of each template (effectively the head post of the issue once created) will indicate where and what type of information should be added to the issue.
 
-```
-URLs:
-back: https://github.com/textpattern/textpattern.github.io/blob/master/brand/user-docs-collaboration.md
-front: https://docs.textpattern.com/brand/user-docs-collaboration
-```
+In both cases, the issue body should begin with the full URLs for the expected/existing backend and front-end document locations. Neither URL will actually work until a draft document has been pushed to the repository (backend), and later published (front-end), but it’s convenient to add the URLs at this point so it’s done. These URLs are handy later for quickly finding and accessing the document should any collaborator need or want to from context of the issue. If you ever change document file names (for any issue), update these URLs in relation so the links work correctly, as well anywhere else in documentation (at least) that linked to the files. (More on this later in the [URL-only titles](#url—only-titles) section.)
 
-Neither URL will actually work until a draft document has been pushed to the repository (backend), and later published (front-end), but it’s convenient to add them now for use later. These URLs are handy for quickly finding and accessing the document should any collaborator need or want to from context of the Issue. Should the [file names](#url—only-titles) ever change, these links must be updated in relation, and anywhere else in documentation that linked to the files.
+One important difference to be aware of is that file names for tag pages — specifically for a Textpattern tag in the [Tags Reference](/tags/) — are constructed using underscores (like_this), not hyphens. All other pages in user documentation use hyphens (like-this). 
 
-After the URLs should be *brief* commentary on what the point of the Issue is. The info requested depends on which issue template is used. See next sections for specifics.
+After the URLs should be *brief* commentary on what the point of the issue is. The info requested depends on which issue template is used. See next sections for template specifics.
 
-Finally, you’ll be given the start of a checkbox list to use, if  warranted, to list resources links that could help guide the task of the open issue. This is especially warranted when using  the ‘Propose new page’ template.
+Finally, you’ll be given the start of a checkbox list to use, if  warranted, to list resource links that could help guide the task of the open issue, especially for new documents needing developed.
 
-#### Issue template: Propose new page
+#### Issue template: New page
 
 Use this template if no documentation page exists for the topic needing developed. By using this template, you begin the process of creating a dedicated issue for a new documentation page.
 
@@ -166,17 +171,23 @@ The explanation section should make clear what the topic scope  is, and how it h
 
 The final resources section should be used to list all resources, Forum and otherwise, that would help an author draft the document. Add more checkbox list items as needed.
 
-#### Issue template: Discuss existing page
+#### Issue template: Existing page
 
-Only use this template when a doc page exists that does not already have a dedicated Issue. So before even looking at templates, you should do a search in both [open issues](https://github.com/textpattern/textpattern.github.io/issues) and [closed issues](https://github.com/textpattern/textpattern.github.io/issues?q=is%3Aissue+is%3Aclosed) for the page you are interested in. If such an Issue exists, open and use it for the reason you have; do not create a new one for the same page. If no Issue exists, then start one with this template.
+Only use this template for existing doc pages **that do not already have a dedicated Issue**. So be sure to search in open and closed issues for such an issue first.
 
-The title should always prefixed with `page:`, add the document’s title after it.
+The title for this issue always has the prefix, `page:`, with the document’s title after it.
 
 The explanation section should make clear what the immediate task needs to be (presumably some kind of editing, but not solely), and provide any other info that will help guide the task. **This explanation should be revised each time the Issue is opened**.
 
-The final resources listing can be used, if warranted, or deleted to keep the head post concise. 
+The final resources listing can be used, if warranted, or deleted to keep the head post concise.
 
-### Issue Assignees and labels
+*Nota*, this template is only relevant until all existing docs have dedicated issues. Once achieved, if ever, this template will be removed from the repository and the ’New page’ template described previously will be the only one used. (This collaboration doc will need revised in relation.)
+
+#### Other issues
+
+You may happen to notice other kinds of issues created in the documentation repository that don’t reflect the above situations. Issues not easily identified by titles having `page:` or `proposed:` prefixes will undoubtedly concern systems-related tasks, or other tasks dealing with platform architecture. If you ever need to start a new issue for such concerns, you can use a [blank issue](https://github.com/textpattern/textpattern.github.io/issues/new) and fill it in as you think best.  
+
+### Assignees and labels for docs issues
 
 When creating a new Issue or editing one that already exists, you can assign who is responsible for the issue and add the appropriate task and status Labels. 
 
@@ -204,27 +215,36 @@ Labels do not do all the communicating, though, it is just as important for assi
 
 Ensuring labels on an issue are current is largely the responsibility of the last person working on the issue. As assignees come and go on issues, they are responsible for make sure to change the labels accordingly.
 
-The Labels we use are fairly self explanatory, and their descriptions help clarify their purposes, too. In the next sections we’ll go over a few as they concern editorial workflow.
+The Labels we use are fairly self explanatory, and their descriptions help clarify their purposes, too. The next sections go over a few as they concern editorial workflow.
 
 ### Collaborative editorial workflow
 
 The Assignees and Labels will expectedly change on Issues as a document proceeds through the phases of editorial development:
 
-1. researching
-2. drafting
-3. technical reviewing
-4. editing
-5. publishing (i.e. made live on docs website)
+1. proposing
+2. researching
+3. drafting
+4. technical reviewing
+5. editing
+6. publishing (i.e. made live on docs website)
 
 This isn’t a well-oiled machine and nobody is especially diligent about the workflow, but we try to fall into line for the sake of courtesy and not stepping on toes.
 
+#### Proposing
+
+This follows having created a new issue for a proposed topic. Before anyone assigns themselves to the issue, someone other than the issue creator must slap either a **DECLINED** or **APPROVED** label on it.
+
+If declined, the decliner must explain in the issue comments what the problem is, why, and what might be fixed for a green light, if anything can or should be. An additional **ON HOLD** label is added during this period and the issue is kept open. If no agreement is made to proceed with the topic, the **ON HOLD** label is removed, the **DECLINED** label remains, and the issue is closed.
+
+If approved, the prefix on the issue title is changed from `proposed:` to `page:`, making it a dedicated page issue, and the **APPROVED** label is removed. No assignee needs made at this point (anyone may then self-assign) and the issue is left open.
+
 #### Researching and drafting
 
-The person who first drafts a doc will naturally research the topic in order to know what to write and how best to organize concepts on the page. Thus, the assignee on a document for these two steps is *generally* the same person and only the labels will change as they transition from **researching** to **drafting**.
+The person who volunteers to draft a new doc (of revise an existing doc) will naturally research the topic in order to know what to write and how best to organize concepts on the page. Thus, the assignee on a document for these two steps is *generally* the same person and only the labels may change as they transition from **researching** to **drafting** to keep collaborators abreast of progress, or both labels can be applied at the same time.
 
 #### Technical reviewing
 
-Depending on the topic and scope of a document being drafted, it may need a different pair of eyes to do the technical review, namely a core developer, though anyone with the knowledge needed. This may happen during the draft process as a kind of back and forth, while keeping running commentary in the associated Issue, or it can happen after the author is done with the first draft.
+Depending on the topic and scope of a document being drafted, it may need a different pair of eyes to do the technical review, namely a core developer, though anyone with the sufficient knowledge of the functionality in question. This may happen during the draft process as a kind of back and forth, while keeping running commentary in the associated issue, or it can happen after the author is done with the first draft.
 
 If the author requests technical assistance while drafting, the reviewer’s name is added along with the authors as Assignees, and that is enough since the doc is still being drafted and the **drafting** label suffices in that case.
 
@@ -258,13 +278,23 @@ On the other hand, should an existing doc ever need to go through extensive deve
 
 #### Editorial tips and reminders
 
-* Don’t work on more than one document at a time. If you are assigned to a task, finish the task before taking on another one for a different issue.
+* Don’t work on more than one document at a time. If you are assigned to a task, finish the task before taking on another one for a different issue
 * Consider the big picture [linking strategy](/brand/user-docs-guide#linking-strategy) for documentation as a whole.
-* Double check your link changes before pushing changes live; both links across document pages and in-page anchor links. All links within the documentation website should be relative URLs. :
+* Double check your link changes before pushing changes live; both links across document pages and in-page anchor links. All links within the documentation website should be relative URLs:
    * across-pages: `[other page](/directory/file-name)`
    * in-page: `[subsection](#subsection-heading)`
 * If you change titles (not file names), update the dedicated Issue title too, and try to find and update other files that might be using the old titles as link text. (Potentially a hard task.)
-* Do not change file names (even if you changed titles), unless you also coordinate with @petecooper to establish 301 redirects to the new file names. 
+* Do not change file names (even if you changed titles), unless you also coordinate with @petecooper to establish 301 redirects to the new file names
+
+## Document draft
+
+The fun finally begins. A topic idea was surfaced, an issue for it was created, and now it is time to _write_.
+
+Use the [new document page template](/brand/user-docs-page-template) to quickly get the draft started. Everything you need to know is explained in the template.
+
+Two or more people can feasibly work on a draft (e.g. different sections), though not at the same time to avoid repository conflicts (a versioning term). Authors collaborating on drafts can work out their own strategy, using existing issue labels.  
+
+*Nota*, in the metadata of all doc pages is a line called `published:`. This takes one of two values: `false` (not live in the docs website) or `true` (live). As documents are drafted, use `false`. This enables you to start a draft (even if not completed) and commit it to the repository without it appearing in the docs website. The value is only changed to `true` when the doc is ready for public use and approved for such by editorial review. Once becoming live (`true`) the value must stay that way unless the document is slated for permanent removal, at which point some kind of server status is established by @petecooper to instruct search engine bots.
 
 ## Wrap-up example for context
 
@@ -278,21 +308,34 @@ A contributing editor then realizes [how that doc can be approached and structur
 
 Another editor gives the idea a [nod of approval](https://forum.textpattern.com/viewtopic.php?pid=327313#p327313), thus the way is clear to get an Issue started for that document.
 
-(N.b. not all doc topics are as easily realized and quickly scoped for an Issue as this one was. But the process — from idea, to discussion, to approval, to Issue for development — is more or less the same for any doc to be developed, regardless of how long the process might take.)
+(*Nota*, not all doc topics are as easily realized and quickly scoped for an Issue as this one was. But the process — from idea, to discussion, to issue, to final approval for development — is more or less the same for any new document, regardless of how long the process might take.)
 
-Since the first editor scoped the doc topic, he fairly takes responsibility to start the dedicated Issue. He does this by opening the [Propose new page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=propose-new-page.md&title=proposed%3A+) template for Issues in the [docs repository](https://github.com/textpattern/textpattern.github.io) and fills in the necessary data ([as described earlier](#propose-new-page-template). In this case, the starting info used was:
-     * title: **`proposed:` Build a personal blog**
-     * urls:
-        * Back: **https://docs.textpattern.com/build/custom-blog**
-        * Front: **https://github.com/textpattern/textpattern.github.io/blob/master/build/custom-blog**
-     * explanation: **Learning to build a custom blog by unpacking and understanding the default Textpattern theme, thereby answering other ‘how to’ type questions people often have, as well offer opportunities to segue into the topic of themes and link to that documentation.**
-     * resources: (a list of resources to to help write the first draft, TBD)
+Since the first editor scoped the doc topic, they fairly take responsibility to start the dedicated Issue. They do this by opening the [New page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=propose-new-page.md&title=proposed%3A+) template for Issues in the [docs repository](https://github.com/textpattern/textpattern.github.io) and fill in the necessary data ([as described earlier](#issue-template-new-page). In this case, the starting title was:
 
-The editor can also decide to take on the initial task of drafting that doc, else leave the Issue unassigned so anyone else can can have the pleasure of tackling that monster.
+```
+proposed: Build a personal blog
+```
 
-At this point [editorial workflow](#collaborative-editorial-workflow) kicks in with [Assignees](#assignees) and [Labels](#labels) changing along the way.
+And the starting body info was:
 
-The process finishes by publishing the new doc, and the collaborative work repeats on a new Issue.
+```
+#### URLs
+        
+- Back: https://docs.textpattern.com/build/custom-blog
+- Front: https://github.com/textpattern/textpattern.github.io/blob/master/build/custom-blog
+
+#### Explanation
+
+A doc for learning to build a custom blog by unpacking and understanding the default Textpattern theme, addressing other ‘how to’ type questions people often have, and provide opportunities to segue into using themes and link to that documentation.
+
+#### Resources list
+
+(a list of resources to to help write the first draft, TBD)
+```
+
+[Editorial workflow](#collaborative-editorial-workflow) begins with the person creating the new issue deciding either to take responsibility for [starting the document draft](#document-draft), at least a section or two, else leave the issue unassigned so anyone else can have the pleasure. [Assignees](#assignees) and [Labels](#labels) changes will be needed at every stage.
+
+The process finishes by publishing the new doc, and the collaborative work repeats with a new topic or issue.
 
   
 
