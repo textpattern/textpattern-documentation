@@ -2,11 +2,11 @@
 layout: document
 category: Brand
 published: true
-title: Collaboration on user documentation
-description: Orientation for collaboration on Textpattern user documentation.
+title: Collaboration on documentation
+description: Orientation and procedures for collaboration on Textpattern user documentation.
 ---
 
-#  Collaboration on user documentation
+#  Collaboration on documentation
 
 These procedures are for anyone helping to develop user documentation for Textpattern. They cover the full extent of the collaboration process in relation to documentation workflow, including the protocols for using the repository Issues. People actually writing and editing user documentation will also be aware of the [guidelines for developing user documentation](/brand/user-docs-guide).
 
@@ -29,7 +29,7 @@ The ideal relationship between the [Forum](https://forum.textpattern.com/) and [
 4. If no such user doc exists, the knowledgeable community member must provide descriptive help details in the forum thread itself — a necessary response, and perhaps even enjoyed by some, but **least ideal** from a productivity standpoint.
 5. The topic gap in docs, realized from the previous step, is [listed for documentation development](#identifying-potential-topics) so similar questions are not repeatedly answered in the Forum in the future.
 
-The above scenario makes clear what **the theoretical end-game goal** is for collaborative documentation development: **to establish a Forum/Docs equilibrium at steps 1 through 3**. Steps 4 and 5 mean there is work to do; the equilibrium has not been reached.
+The above scenario makes clear what **the theoretical end-game goal** is for collaborative documentation development: **to establish a Forum-Docs equilibrium at steps 1 through 3**. Steps 4 and 5 mean there is work to do; the equilibrium has not been reached.
 
 The worst situation is having incomplete documentation that only addresses half the enquiries people have, forcing them to the Forum where others must also spend valuable time providing answers, often over and over again as threads on similar topics sink into oblivion.
 
@@ -100,11 +100,11 @@ Other terms not to use in titles include useless genre flags like ‘how to’, 
 
 An exception to the above is if one of those terms is, in fact, a subject in the topic or scope, like the current document, where the subject *is* on user documentation.
 
-Fortunately, topic titles can be changed anytime to improve the clarity and usability of them, even if already published. We don’t break any links by changing topic titles. If making any title changes like this, however, attempt to find and edit link text in relation, wherever it exists. Likewise, titles must be updated on their dedicated Issues.
+Fortunately, topic titles can be changed anytime to improve the clarity and usability of them, even if already published. We don’t break links by changing topic titles. When making title changes like this, however, attempt to find and edit link text in relation, wherever it exists. Likewise, **titles must be updated on their dedicated Issues**.
 
 ### URL-only titles
 
-Unlike topic titles, URL-only titles (document file names based off of topic titles) do not have to follow the same rules of grammar or satisfy search engines. This means you can drop as many words as you can and mix the remaining words around so long as what is left still hints to the document topic it belongs to. The resulting shorter file names make it a *lot* easier to work with links in copy and file tree directories.
+Unlike topic titles, URL-only titles (document file names based off of topic titles) do not have to follow the same rules of grammar or satisfy search engines, nor do they have to mimic the diction and syntax of the `h1` titles. This means you can drop as many words as you can and mix the remaining words around so long as what is left still hints to the document topic it belongs to. The resulting shorter file names make it a *lot* easier to work with links in copy and file tree directories.
 
 Use your best judgement for document file names, thus their URLs, but consider the following guides to help:
 
@@ -230,11 +230,17 @@ This isn’t a well-oiled machine and nobody is especially diligent about the wo
 
 #### Proposing
 
-This follows having created a new issue for a proposed topic. Before anyone assigns themselves to the issue, someone other than the issue creator must slap either a **DECLINED** or **APPROVED** label on it.
+This follows having created a new issue for a proposed topic.
 
-If declined, the decliner must explain in the issue comments what the problem is, why, and what might be fixed for a green light, if anything can or should be. An additional **ON HOLD** label is added during this period and the issue is kept open. If no agreement is made to proceed with the topic, the **ON HOLD** label is removed, the **DECLINED** label remains, and the issue is closed.
+No one can yet assign themselves to the task.
 
-If approved, the prefix on the issue title is changed from `proposed:` to `page:`, making it a dedicated page issue, and the **APPROVED** label is removed. No assignee needs made at this point (anyone may then self-assign) and the issue is left open.
+Nothing can be done on the issue until at least one of the collaborating docs maintainers and/or seasoned editors (@Bloke, @Petecooper, @Philwareham, @wion in the repository) approves the issue as proposed for development or points out that the proposal needs adjustments or clarifications first. The latter could be to better clarify scope, change the title, decide where in the architecture it should really go, or whatever the case may be. Whichever the case, the second editor quickly makes clear what the status is by adding either the **APPROVED** or **NEEDS DISCUSSION** label to the issue.
+
+If the proposal is approved, anyone can take the task of researching and drafting the doc.
+
+If the proposal needs discussion and more thinking, the second editor must explain in the comments of the issue what the problems are and an additional **ON HOLD** label is added to the issue.
+
+If a proposal is decided (after discussion) to be non-workable; that is, the document will not be developed for any reason, the issue is slapped with a **DECLINED** label only and closed.
 
 #### Researching and drafting
 
@@ -272,55 +278,64 @@ When the document is live and no further tweaks are needed, the author Issue for
 
 The workflow process is not only for new docs, of course, but for revising/editing existing docs, too. In these situations the workflow can be reduced depending on the extent of the changes needed. For example, maybe some typos are discovered, or just a paragraph needs revised. Such revisions do not require more than one editor making the changes and pushing them live.
 
-On the other hand, should an existing doc ever need to go through extensive developmental editing again, or incorporate new descriptions of software functionality, it may need both a technical review by a developer and a final copyedit sweep, thus a change of assignees and labels accordingly.
+On the other hand, should an existing doc ever need to go through extensive developmental editing again, or incorporate new descriptions of software functionality, it may need both a technical review by a developer and a final copy-edit sweep, thus a change of assignees and labels accordingly.
 
 #### Editorial tips and reminders
 
-* Don’t work on more than one document at a time. If you are assigned to a task, finish the task before taking on another one for a different issue
+* Don’t work on more than one document at a time. If you are assigned to a task, finish the task before taking on another one for a different issue.
 * Consider the big picture [linking strategy](/brand/user-docs-guide#linking-strategy) for documentation as a whole.
 * Double check your link changes before pushing changes live; both links across document pages and in-page anchor links. All links within the documentation website should be relative URLs:
    * across-pages: `[other page](/directory/file-name)`
-   * in-page: `[subsection](#subsection-heading)`
+   * in-page: `[subsection](#subsection-heading)`.
 * If you change titles (not file names), update the dedicated Issue title too, and try to find and update other files that might be using the old titles as link text. (Potentially a hard task.)
-* Do not change file names (even if you changed titles), unless you also coordinate with @petecooper to establish 301 redirects to the new file names
+* Do not change file names (even if you changed titles), unless you also coordinate with @petecooper to establish 301 redirects to the new file names.
 
 ## Document draft
 
-The fun finally begins. A topic idea was surfaced, an issue for it was created, and now it is time to _write_.
+The fun finally begins. A topic idea was surfaced, an issue for it was created and approved, and now it is time to _write_.
 
 Use the [new document page template](/brand/user-docs-page-template) to quickly get the draft started. Everything you need to know is explained in the template.
 
-Two or more people can feasibly work on a draft (e.g. different sections), though not at the same time to avoid repository conflicts (a versioning term). Authors collaborating on drafts can work out their own strategy, using existing issue labels.  
+Two or more people can feasibly work on a draft (e.g. different sections), though not at the same time to avoid repository conflicts (a versioning term). Authors collaborating on drafts can work out their own strategy by using existing issue labels and issue comments.  
 
 *Nota*, in the metadata of all doc pages is a line called `published:`. This takes one of two values: `false` (not live in the docs website) or `true` (live). As documents are drafted, use `false`. This enables you to start a draft (even if not completed) and commit it to the repository without it appearing in the docs website. The value is only changed to `true` when the doc is ready for public use and approved for such by editorial review. Once becoming live (`true`) the value must stay that way unless the document is slated for permanent removal, at which point some kind of server status is established by @petecooper to instruct search engine bots.
 
 ## Wrap-up example for context
 
-An example might be helpful to wrap the entire collaborative workflow together.
+An example might help bring it all together.
 
 We begin with having understood what the [goal and objectives](user-docs-collaboration#big-picture-goal-and-primary-objective) are, as described at the start.
 
-We then bring our attention to the [running list of topics](https://forum.textpattern.com/viewtopic.php?id=51220) being kicked around by all those who want to help with documentation. In that discussion, an attentive community member offers a corker that garners a few *here, heres*: [develop an explanatory doc on building a blog](https://forum.textpattern.com/viewtopic.php?pid=327293#p327293).
+ A collaborator then heads to one of two places:
 
-A contributing editor then realizes [how that doc can be approached and structured](https://forum.textpattern.com/viewtopic.php?pid=327310#p327310) for fit in the homepage under development ([index2](https://docs.textpattern.com/index2)).
+* the [running list of topics](https://forum.textpattern.com/viewtopic.php?id=51220) being kicked around by all who wish to help with documentation (including you)
+* the [open Issues](https://github.com/textpattern/textpattern.github.io/issues) list for any proposed docs that are approved for development but not yet assigned to anyone.
 
-Another editor gives the idea a [nod of approval](https://forum.textpattern.com/viewtopic.php?pid=327313#p327313), thus the way is clear to get an Issue started for that document.
+In the latter case, you can self-assign to any available issue and get started. Any approved but unclaimed proposals will still have an **APPROVED** label on them, and perhaps a **writer needed** label, too. Assign yourself to such an issue, change the labels, accordingly, and get started.
 
-(*Nota*, not all doc topics are as easily realized and quickly scoped for an Issue as this one was. But the process — from idea, to discussion, to issue, to final approval for development — is more or less the same for any new document, regardless of how long the process might take.)
+We continue this example with the first situation above.
 
-Since the first editor scoped the doc topic, they fairly take responsibility to start the dedicated Issue. They do this by opening the [New page](https://github.com/textpattern/textpattern.github.io/issues/new?assignees=&labels=&template=propose-new-page.md&title=proposed%3A+) template for Issues in the [docs repository](https://github.com/textpattern/textpattern.github.io) and fill in the necessary data ([as described earlier](#issue-template-new-page). In this case, the starting title was:
+In that topics discussion linked above, an attentive community member offers a corker that garners a few *here, heres*: [develop an explanatory doc on building a blog](https://forum.textpattern.com/viewtopic.php?pid=327293#p327293).
+
+A contributing editor then realizes [how that doc can be approached and structured](https://forum.textpattern.com/viewtopic.php?pid=327310#p327310) for fit in the overall architecture.
+
+Another editor gives the idea a [nod of approval](https://forum.textpattern.com/viewtopic.php?pid=327313#p327313), thus the way is clear to get an issue started that proposes that document.
+
+(*Nota*, not all doc topics are as easily realized and quickly scoped for an Issue as this one was. But the process — from idea, to discussion, to issue — is more or less the same for any new topic idea, regardless of how long the process might take.)
+
+Since the first editor scoped the doc topic, they fairly take responsibility to start [the dedicated issue](https://github.com/textpattern/textpattern.github.io/issues/184). They did this by opening the [New page issue template](#issue-template-new-page) in the docs repository and filling in the necessary data. The original doc title proposed was:
 
 ```
-proposed: Build a personal blog
+proposed: Build a custom blog
 ```
 
-And the starting body info was:
+And the supporting details provided were:
 
 ```
 #### URLs
         
-- Back: https://docs.textpattern.com/build/custom-blog
-- Front: https://github.com/textpattern/textpattern.github.io/blob/master/build/custom-blog
+- Front: https://docs.textpattern.com/build/custom-blog
+- Back: https://github.com/textpattern/textpattern.github.io/blob/master/build/custom-blog
 
 #### Explanation
 
@@ -331,7 +346,9 @@ A doc for learning to build a custom blog by unpacking and understanding the def
 (a list of resources to to help write the first draft, TBD)
 ```
 
-[Editorial workflow](#collaborative-editorial-workflow) begins with the person creating the new issue deciding either to take responsibility for [starting the document draft](#document-draft), at least a section or two, else leave the issue unassigned so anyone else can have the pleasure. [Assignees](#assignees) and [Labels](#labels) changes will be needed at every stage.
+Nothing more could be done [until the doc is approved, if at all](#proposing), and that is where the proposal stands at time of writing this.
+
+Once a proposal is approved, [editorial workflow](#collaborative-editorial-workflow) begins with the person creating the new issue deciding either to take responsibility for [starting the document draft](#document-draft), at least a section or two, else leave the issue unassigned so anyone else can have the pleasure. [Assignees](#assignees) and [Labels](#labels) changes will be needed at every stage.
 
 The process finishes by publishing the new doc, and the collaborative work repeats with a new topic or issue.
 
