@@ -21,7 +21,9 @@ tags:
 <txp:site_url />
 ~~~
 
-The **site_url** tag is a *single* tag which returns the full URL of the site (as defined in the [Preferences panel](/administration/preferences-panel)) as text. If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (and thus broken) between the two locations (see example 1, below).
+The **site_url** tag is a *single* tag which returns the full URL of the site (as defined in the Preferences panel) as text. If you maintain local development versions of your live sites and import databases between them, then this tag is extremely valuable for ensuring your domain links are never confused (and thus broken) between the two locations (see example 1, below).
+
+For more general purpose access to URLs and their components, please see the [page_url](/tags/page_url) tag, which includes admin (back-end) site links for both regular and multi-site installations, theme links and paths, and URL parameters.
 
 ## Attributes
 
@@ -30,6 +32,8 @@ Tag will accept the following attribute (**case-sensitive**):
 `type="admin"` <span class="footnote warning">v4.7.0+</span>
 : Specify this if you wish to return the URL to the admin-side instead of the public site.
 : **Default:** unset.
+
+{% include atts-global.html break="" %}
 
 ## Examples
 
