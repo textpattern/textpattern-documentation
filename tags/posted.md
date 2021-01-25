@@ -3,7 +3,7 @@ layout: document
 category: Tags
 published: true
 title: Posted
-description: The posted tag is a single tag which is used to return the publish date of the article being displayed.
+description: The posted tag is a single tag which is used to return the publication date of the article being displayed.
 tags:
   - Article tags
 ---
@@ -21,11 +21,11 @@ tags:
 <txp:posted />
 ~~~
 
-The **posted** tag is a *single* tag which is used to return the publish date of the article being displayed. The default format is determined by the settings specified in the 'Date format' or 'Archive date format' fields in the Preferences panel. It can be overridden with the `format` attribute.
+The **posted** tag is a *single* tag which is used to return the publication date of the article being displayed. The default format is determined by the settings specified in the 'Date format' or 'Archive date format' fields in the Preferences panel. It can be overridden with the `format` attribute.
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `format="format string"`
 : Override the default date format set in the Preferences panel.
@@ -41,8 +41,6 @@ Tag will accept the following attributes (**case-sensitive**):
 : Format time string suitable for the specified language (locale).
 : **Values:** locales adhere to [ISO-639](https://en.wikipedia.org/wiki/ISO_639-2).
 : **Default:** unset (time format set in the Preferences panel.
-
-{% include atts-global.html %}
 
 ## Examples
 
