@@ -21,13 +21,13 @@ tags:
 <txp:comments_invite />
 ~~~
 
-The **comments_invite** tag is a *single* tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern [Write panel](/administration/write-panel).
+The **comments_invite** tag is a *single* tag which is used to display a link to an article comment form. Text used for the link will be taken from the invitation field on the Textpattern Write panel.
 
 This tag can be used in both Textpattern [Page templates](/themes/page-templates-explained) and [Form templates](/themes/form-templates-explained).
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `showalways="boolean"`
 : Whether to display invite on individual article page.

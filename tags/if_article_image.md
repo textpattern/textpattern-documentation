@@ -31,11 +31,11 @@ The **if_article_image** tag is a *conditional* tag and always used as an openin
 </txp:if_article_image>
 ~~~
 
-The tag will execute the contained statements if an image is associated (through the [Write panel](/administration/write-panel) 'Article image' field) with the article being displayed.
+The tag will execute the contained statements if an image is associated (through the Write panel 'Article image' field) with the article being displayed.
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

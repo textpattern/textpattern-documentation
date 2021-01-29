@@ -33,10 +33,10 @@ The tag will execute the contained statements if the name attribute matches a cu
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `name="text"`
-: Plugin name as defined on the [Plugins panel](/administration/plugins-panel).
+: Plugin name as defined on the Plugins panel.
 
 `version="number"`
 : Minimum plugin version number.

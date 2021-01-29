@@ -25,7 +25,7 @@ The **image_info** tag is a *single* tag that Textpattern will replace with the 
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `escape="html"`
 : Escape [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity) such as `<`, `>` and `&`.
@@ -33,11 +33,11 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `html`.
 
 `id="integer"`
-: An `id` assigned at upload of an image to display. The IDs can be found on the [Images panel](/administration/images-panel).
+: An `id` assigned at upload of an image to display. The IDs can be found on the Images panel.
 : **Default:** unset.
 
 `name="image name"`
-: An image to display, given by its image name as shown on the [Images panel](/administration/images-panel). If both `name` and `id` are specified, the `id` takes precedence.
+: An image to display, given by its image name as shown on the Images panel. If both `name` and `id` are specified, the `id` takes precedence.
 : **Default:** unset.
 
 `type="information type"`

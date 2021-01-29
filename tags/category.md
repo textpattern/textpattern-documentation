@@ -28,7 +28,7 @@ May be used in any context.
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `link="boolean"`
 : Whether to display as link. Works only in the *single* tag, **not** in the *containing* tag variant.
@@ -36,7 +36,7 @@ Tag will accept the following attributes (**case-sensitive**):
 : **Default:** `0`.
 
 `name="category name"`
-: Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the [Categories panel](/administration/categories-panel). Also note that if you had called your category `My Category Name` it becomes `my-category-name` when used in tags.
+: Display specific category. Note the category name is specified in lowercase regardless of how you typed its title in the Categories panel. Also note that if you had called your category `My Category Name` it becomes `my-category-name` when used in tags.
 : **Default:** unset (use current category).
 
 `section="section name"`

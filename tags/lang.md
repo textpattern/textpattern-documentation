@@ -22,11 +22,11 @@ tags:
 <txp:lang />
 ~~~
 
-The **lang** tag is a *single* tag. Textpattern will replace this tag with the 2-letter code of the language which is set as the site's language preference in the [Languages panel](/administration/languages-panel), according to [RFC 1766](https://www.ietf.org/rfc/rfc1766.txt).
+The **lang** tag is a *single* tag. Textpattern will replace this tag with the 2-letter code of the language which is set as the site's language preference in the Languages panel, according to [RFC 1766](https://www.ietf.org/rfc/rfc1766.txt).
 
 ## Attributes
 
-This tag has no attributes.
+This tag has no attributes of its own. It accepts only the {% include atts-global-link.html %}.
 
 ## Examples
 

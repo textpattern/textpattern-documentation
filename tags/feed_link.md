@@ -25,10 +25,10 @@ The **feed_link** tag can be used as either a *single* or *container* tag and is
 
 ## Attributes
 
-Tag will accept the following attributes (**case-sensitive**):
+Tag will accept the following attributes (**case-sensitive**) as well as the {% include atts-global-link.html %}:
 
 `category="category name"`
-: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the [Categories panel](/administration/categories-panel) to ensure you are using the correct names.
+: Restrict to articles from specified category/categories. Note: the category names may be different to the title you typed when you created the category, as the names are sanitized for URL use. Check the Categories panel to ensure you are using the correct names.
 : **Values:** (comma separated list of) category name(s).
 : **Default:** current category.
 
@@ -44,7 +44,7 @@ Tag will accept the following attributes (**case-sensitive**):
 
 `limit="integer"`
 : Number of articles to display in the feed.
-: **Default:** depends upon [Preferences panel](/administration/preferences-panel) setting.
+: **Default:** depends upon Preferences panel setting.
 
 `section="section name"`
 : Restrict to articles from specified section(s).
