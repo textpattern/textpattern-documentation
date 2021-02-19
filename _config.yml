@@ -3,8 +3,9 @@ timezone: Europe/London
 permalink: /:categories/:title
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
+  - jekyll-pwa-plugin
   - jekyll-seo-tag
+  - jekyll-sitemap
 author: The Textpattern Development Team and contributors
 exclude:
   - Gemfile
