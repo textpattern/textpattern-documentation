@@ -214,7 +214,7 @@ To take action if the article list is greater than the fifth page of results, yo
 
 The expression `^([6-9]|\d\d)` means: does the page value start with a 6, 7, 8, or 9, or is double digits.
 
-**Option 2: Use <txp:evaluate>**
+**Option 2: Use evaluate**
 
 ~~~ html
 <txp:evaluate query='<txp:variable name="page" /> > 5'>
@@ -222,7 +222,7 @@ The expression `^([6-9]|\d\d)` means: does the page value start with a 6, 7, 8, 
 </txp:evaluate>
 ~~~
 
-Other tags used: [else](/tags/else), [evaluate]/tags/evaluate, [if_variable](/tags/if_variable), [page_url](/tags/page_url).
+Other tags used: [else](/tags/else), [evaluate](/tags/evaluate), [if_variable](/tags/if_variable), [page_url](/tags/page_url).
 
 ### Example 7: Link to the latest article in a section
 
