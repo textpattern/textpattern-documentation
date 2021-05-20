@@ -15,7 +15,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 <div class="layout-container index-docs">
 <section class="layout-3col">
 
-### Installation handling
+## Installation handling
 {: .index-docs-start}
 
 * [Installing the software](/setup/installing-the-software)
@@ -30,7 +30,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 </section>
 <section class="layout-3col">
 
-### Site administration
+## Site administration
 {: .index-docs-admin}
 
 * [Textpattern administration](/administration/) (explanations of principle functionality)
@@ -41,7 +41,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 </section>
 <section class="layout-3col">
 
-### Tags
+## Tags
 {: .index-docs-tags}
 
 <section>
@@ -66,7 +66,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 </section>
 <section class="layout-3col">
 
-### Themes
+## Themes
 {: .index-docs-theme}
 
 * [Themes: Creating, using, and sharing](/build/themes-creating-using-and-sharing)
@@ -77,7 +77,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 </section>
 <section class="layout-3col">
 
-### Development
+## Development
 {: .index-docs-dev}
 
 * [Plugin development](/development/)
@@ -88,7 +88,7 @@ Documentation for Textpattern’s out-of-the-box functionality. [Editorial contr
 </section>
 <section class="layout-3col">
 
-### Tutorials and FAQs
+## Tutorials and FAQs
 {: .index-docs-faqs}
 
 * [Textpattern basic tutorial](/faqs/textpattern-basic-tutorial)
