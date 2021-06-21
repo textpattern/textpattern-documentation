@@ -179,15 +179,22 @@ These callbacks are raised when input elements or constructs are rendered. They 
 
 #### Articles panel
 
+`articles > multi_edit.{action}` (where `action` is `delete`, `changeauthor`, `changecategory1`, `changecategory2`, `changecomments`, `changesection`, `changestatus`, or a plugin's action)
+* **When it occurs:** Either before (pre=1) or after (pre=0) one or more articles have been altered via the multi-edit tool.
+* **What it allows:** To perform any additional functionality when one or more articles are changed, or about to be changed via the multi-edit tool.
+* **Additional parameter:** An array of affected article IDs, the database field affected, and the new value assigned.
+
 `articles_deleted`
 * **When it occurs:** After one or more articles have been deleted and any associated comments have had their visibility removed.
 * **What it allows:** To do any additional cleanup after one or more articles are removed from Textpattern.
 * **Additional parameter:** An array of deleted article IDs.
+* **Note:** Will be phased out in favour of the above `articles > multi_edit.{action}` (pre=0) callback in future.
 
-`multi_edited.articles > {action}` (where `action` is `delete`, `changeauthor`, `changecategory1`, `changecategory2`, `changecomments`, `changesection`, or `changestatus`)
+`multi_edited.articles > {action}` (where `action` is `delete`, `changeauthor`, `changecategory1`, `changecategory2`, `changecomments`, `changesection`, `changestatus`, or a plugin's action)
 * **When it occurs:** After one or more articles have been altered via the multi-edit tool.
 * **What it allows:** To perform any additional functionality after one or more articles are changed via the multi-edit tool.
 * **Additional parameter:** An array of affected article IDs, the database field affected, and the new value assigned.
+* **Note:** Will be phased out in favour of the above `articles > multi_edit.{action}` (pre=0) callback in future.
 
 #### Categories panel
 
@@ -381,7 +388,7 @@ See also `authors_deleted`.
 * **What it allows:** To do any additional processing after user metadata has been modified.
 * **Additional parameter:** An array containing a list of the `user` names affected and new privilege level they have been assigned.
 
-### Plugins panel
+#### Plugins panel
 
 `txp.plugin > data.fetch`
 * **When it occurs:** As a plugin's internal data is fetched from the database.
