@@ -123,7 +123,7 @@ In this section:
 
 `admin_side > footer`
 * **When it occurs:** When the theme's footer bar is rendered.
-* **What it allows:** Alteration of the footer area of each panel. Theme authors do this by writing a `footer()` function in their theme's PHP file. 
+* **What it allows:** Alteration of the footer area of each panel. Theme authors do this by writing a `footer()` function in their theme's PHP file.
 
 ### UI elements
 
@@ -372,8 +372,8 @@ In this section:
 ### Preferences panel
 
 `prefs_ui > gmtoffset`
-* **When it occurs:** The timezone selector on the Preferences panel.
-* **What it allows:** Addition or alteration of the timezone selector.
+* **When it occurs:** The time zone selector on the Preferences panel.
+* **What it allows:** Addition or alteration of the time zone selector.
 * **Argument \#3:** The HTML of the select input.
 * **Argument \#4:** The name of the HTML element being drawn. `timezone_key` in this case.
 * **Argument \#5:** The current value of the HTML element being drawn.
