@@ -3,7 +3,6 @@ timezone: Europe/London
 permalink: /:categories/:title
 plugins:
   - jekyll-feed
-  - jekyll-pwa-plugin
   - jekyll-seo-tag
   - jekyll-sitemap
 author: The Textpattern Development Team and contributors
@@ -21,16 +20,3 @@ highlighter: none
 keep_files: [
   'expect-ct-report'
 ]
-pwa: # See https://github.com/lavas-project/jekyll-pwa
-  enabled: false # Optional
-  sw_src_filepath: service-worker.js # Optional
-  sw_dest_filename: service-worker.js # Optional
-  dest_js_directory: assets/js # Required
-  precache_recent_posts_num: 5 # Optional
-  precache_glob_directory: / # Optional
-  precache_glob_patterns: # Optional
-    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
-    - index.html
-  precache_glob_ignores: # Optional
-    - sw-register.js
-    - "fonts/**/*"
