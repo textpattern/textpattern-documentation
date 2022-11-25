@@ -1,7 +1,7 @@
 {
   "name": "textpattern-docs",
   "description": "Official documentation website of the Textpattern project.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/textpattern/textpattern-docs-website"
@@ -10,9 +10,9 @@
     "url": "https://github.com/textpattern/textpattern-docs-website/issues"
   },
   "devDependencies": {
-    "grunt": "1.3.0",
-    "grunt-cli": "1.3.2",
-    "grunt-contrib-uglify": "5.0.0",
+    "grunt": "1.5.3",
+    "grunt-cli": "1.4.3",
+    "grunt-contrib-uglify": "5.2.2",
     "load-grunt-tasks": "5.1.0"
   },
   "dependencies": {
